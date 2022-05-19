@@ -19,4 +19,9 @@
 .gallery ul li a img {
   border: solid 6px white;
   border-radius: 15px;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.gallery ul li a img:hover {
+  border-color: var(--primary-color);
 }

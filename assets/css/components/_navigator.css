@@ -29,7 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out;
 }
 
 .navigator::before {
@@ -50,6 +51,7 @@
 .navigator ul li a:active {
   color: var(--primary-color);
   background-color: white;
+  border-color: var(--primary-color);
 }
 
 .navigator .navigator__icon {

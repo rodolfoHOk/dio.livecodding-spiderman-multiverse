@@ -47,8 +47,13 @@
   z-index: 1;
 }
 
-.navigator ul li a:hover,
-.navigator ul li a:active {
+.navigator ul li a:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border-color: var(--primary-color);
+}
+
+.navigator ul li .active {
   color: var(--primary-color);
   background-color: white;
   border-color: var(--primary-color);

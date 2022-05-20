@@ -8,11 +8,12 @@ a[data-fancybox] img {
 
 .fancybox__container .fancybox__content {
   display: flex;
-  width: 80vw !important;
+  width: 70vw !important;
 }
 
 .fancybox__container .fancybox__content .fancybox__image {
-  width: 80vw;
+  width: 100%;
+  background-color: black;
   border: 0.35rem solid white;
 }
 

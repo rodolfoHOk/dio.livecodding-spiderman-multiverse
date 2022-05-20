@@ -122,5 +122,23 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        Thumbs: false,
+        Toolbar: false,
+
+        closeButton: "inside",
+
+        Carousel: {
+          Navigation: false,
+        },
+
+        Image: {
+          zoom: false,
+          click: false,
+          wheel: false,
+        },
+      });
+    </script>
   </body>
 </html>

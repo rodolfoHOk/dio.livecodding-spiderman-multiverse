@@ -18,6 +18,4 @@ https://fancyapps.com/
 
 #### próximos passos:
 
-- melhoras imagens abertas da galeria
-
 - responsividade

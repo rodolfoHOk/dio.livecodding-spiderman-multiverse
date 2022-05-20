@@ -1,0 +1,36 @@
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__container {
+  --fancybox-bg: rgba(0, 0, 0, 0.85);
+}
+
+.fancybox__container .fancybox__content {
+  display: flex;
+  width: 80vw !important;
+}
+
+.fancybox__container .fancybox__content .fancybox__image {
+  width: 80vw;
+  border: 0.35rem solid white;
+}
+
+.fancybox__container .fancybox__content .carousel__button {
+  top: 16px !important;
+  right: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fancybox__container .fancybox__content .carousel__button:hover {
+  background-color: var(--primary-color);
+}
+
+.fancybox__caption {
+  max-width: 80%;
+}

@@ -2,10 +2,15 @@ a.link-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   border: solid 1px white;
   border-radius: 100px;
   padding: 2px 16px;
+  transition: background-color 0.1s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+a.link-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: var(--primary-color);
 }
 
 a.link-button .icon {
@@ -35,4 +40,9 @@ a.link-button .label {
   font-weight: bold;
   color: var(--primary-color);
   margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+a.link-button .label:hover {
+  color: white;
 }

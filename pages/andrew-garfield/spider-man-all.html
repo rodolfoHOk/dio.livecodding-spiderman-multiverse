@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="../../assets/scripts/internal-script.js"></script>
     <title>Multiverso | Spider-Man</title>
   </head>
@@ -213,8 +214,25 @@
           </div>
         </div>
       </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     </div>
+
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        Thumbs: false,
+        Toolbar: false,
+
+        closeButton: "inside",
+
+        Carousel: {
+          Navigation: false,
+        },
+
+        Image: {
+          zoom: false,
+          click: false,
+          wheel: false,
+        },
+      });
+    </script>
   </body>
 </html>

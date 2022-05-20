@@ -102,6 +102,14 @@ body::before {
   width: 100%;
 }
 
+.s-controller__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
 .s-controller__button {
   display: flex;
   align-items: center;
@@ -127,6 +135,10 @@ body::before {
   margin: 0 3.75rem;
 }
 
+.s-controller__button:nth-child(4) {
+  margin: 0 3.75rem;
+}
+
 .s-controller__button--active {
   background-color: white;
   color: var(--primary-color);
@@ -136,9 +148,53 @@ body::before {
 
 .s-controller__line {
   background-color: white;
-  width: 50%;
+  width: 100%;
   height: 2px;
   position: absolute;
+}
+
+.s-controller__previous-button {
+  position: absolute;
+  left: -2.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.s-controller__previous-button:hover {
+  transform: scale(1.1);
+  border-color: white;
+}
+
+.s-controller__next-button {
+  position: absolute;
+  right: -2.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.s-controller__next-button:hover {
+  transform: scale(1.1);
+  border-color: white;
 }
 
 /* Animation on hover in card */

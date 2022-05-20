@@ -25,7 +25,7 @@ function selectCarouselItem(selectedButtonElement) {
   const carousel = document.querySelector(".s-card-carousel");
   const transform = carousel.style.transform;
   const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
-  const rotateYDeg = -120 * (Number(selectedItem) - 1);
+  const rotateYDeg = -120 * (Number(selectedItem.replace("button", "")) - 1);
   const newTransform = transform.replace(
     rotateY[0],
     `rotateY(${rotateYDeg}deg)`
@@ -37,4 +37,32 @@ function selectCarouselItem(selectedButtonElement) {
   );
   activeButtonElement.classList.remove("s-controller__button--active");
   selectedButtonElement.classList.add("s-controller__button--active");
+}
+
+function nextCarouselItem() {
+  const currentSelected = document.querySelector(
+    ".s-controller__button--active"
+  );
+
+  let next = Number(currentSelected.id.replace("button", "")) + 1;
+  if (next > 3) {
+    next = 1;
+  }
+
+  const nextSelection = document.querySelector(`#button${next}`);
+  selectCarouselItem(nextSelection);
+}
+
+function previousCarouselItem() {
+  const currentSelected = document.querySelector(
+    ".s-controller__button--active"
+  );
+
+  let previous = Number(currentSelected.id.replace("button", "")) - 1;
+  if (previous < 1) {
+    previous = 3;
+  }
+
+  const nextSelection = document.querySelector(`#button${previous}`);
+  selectCarouselItem(nextSelection);
 }

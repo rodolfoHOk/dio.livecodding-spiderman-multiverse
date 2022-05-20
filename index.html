@@ -94,31 +94,44 @@
     </div>
 
     <div class="s-controller">
-      <div
-        id="1"
-        class="s-controller__button s-controller__button--active"
-        onclick="selectCarouselItem(this)"
-      >
-        01
-      </div>
+      <div class="s-controller__actions">
+        <div
+          class="s-controller__previous-button"
+          onclick="previousCarouselItem()"
+        >
+          &lt;
+        </div>
 
-      <div
-        id="2"
-        class="s-controller__button"
-        onclick="selectCarouselItem(this)"
-      >
-        02
-      </div>
+        <div
+          id="button1"
+          class="s-controller__button s-controller__button--active"
+          onclick="selectCarouselItem(this)"
+        >
+          01
+        </div>
 
-      <div
-        id="3"
-        class="s-controller__button"
-        onclick="selectCarouselItem(this)"
-      >
-        03
-      </div>
+        <div
+          id="button2"
+          class="s-controller__button"
+          onclick="selectCarouselItem(this)"
+        >
+          02
+        </div>
 
-      <div class="s-controller__line"></div>
+        <div
+          id="button3"
+          class="s-controller__button"
+          onclick="selectCarouselItem(this)"
+        >
+          03
+        </div>
+
+        <div class="s-controller__next-button" onclick="nextCarouselItem()">
+          &gt;
+        </div>
+
+        <div class="s-controller__line"></div>
+      </div>
     </div>
   </body>
 </html>

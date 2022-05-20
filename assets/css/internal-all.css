@@ -1,9 +1,9 @@
 @import url("../../assets/css/reset.css");
 @import url("../../assets/css/global.css");
-@import url("../../assets/css/components/_navigator-all.css");
-@import url("../../assets/css/components/_pills.css");
-@import url("../../assets/css/components/_link-button.css");
-@import url("../../assets/css/components/_gallery.css");
+@import url("../../assets/css/components/navigator-all.css");
+@import url("../../assets/css/components/pills.css");
+@import url("../../assets/css/components/link-button.css");
+@import url("../../assets/css/components/gallery.css");
 
 .s-wrapper {
   display: flex;

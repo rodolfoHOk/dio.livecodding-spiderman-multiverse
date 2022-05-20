@@ -6,4 +6,4 @@ https://fancyapps.com/
 
 - next and previous button in home
 
-- arrumar as importações exemplo: ../../algo.css
+- arrumar as importações

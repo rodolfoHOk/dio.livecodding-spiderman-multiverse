@@ -32,7 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
 .s-page-wrapper .s-main-content {
@@ -46,7 +45,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .s-page-wrapper .s-main-content__bottom {
@@ -57,14 +56,24 @@
 }
 
 .s-page-wrapper .s-main-content .s-logo img {
-  margin-top: 50px;
+  max-width: 860px;
+  margin-top: 36px;
   margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.s-page-wrapper .s-main-content__top .s-middle-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
 .s-page-wrapper .s-main-content__top .s-description {
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 50%;
+  margin-left: 20px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -74,11 +83,20 @@
   line-height: 170%;
 }
 
+.s-description .s-description__text p {
+  font-size: 18px;
+}
+
+.s-description .s-description__text p strong {
+  font-size: 18px;
+}
+
 .s-page-wrapper .s-main-content__top .s-description .pills {
   margin-bottom: 20px;
 }
 
 .s-page-wrapper .s-main-content .s-links {
+  margin-left: 30px;
   padding: 20px;
   padding-left: 0;
 }
@@ -126,4 +144,50 @@
 .s-spiderman-03-03 {
   background-image: url("/assets/images/spiderman-tom/movie-03/background.png");
   background-size: cover;
+}
+
+.s-wrapper .animate-top {
+  animation-name: top-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.s-wrapper .animate-bottom {
+  animation-name: bottom-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes top-in {
+  from {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(-100vh);
+    z-index: 5;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(0vh);
+    z-index: 5;
+  }
+}
+
+@keyframes bottom-in {
+  from {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(100vh);
+    z-index: 5;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(0vh);
+    z-index: 5;
+  }
 }

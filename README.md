@@ -18,4 +18,4 @@ https://fancyapps.com/
 
 #### próximos passos:
 
-- responsividade
+- responsividade páginas internas

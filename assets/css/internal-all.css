@@ -57,6 +57,7 @@
 
 .s-page-wrapper .s-main-content__top .s-logo img {
   max-width: 95%;
+  max-height: 18vh;
   margin-top: 36px;
 }
 

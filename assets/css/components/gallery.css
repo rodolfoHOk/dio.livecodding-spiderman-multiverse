@@ -2,7 +2,6 @@
 
 .gallery {
   display: flex;
-  height: calc(100% - 32px);
   padding: 16px;
   padding-left: 0;
 }
@@ -14,7 +13,7 @@
 
 .gallery ul li a img {
   max-width: 100%;
-  max-height: calc(100% - 8px);
+  max-height: calc(150px);
   border: solid 4px white;
   border-radius: 16px;
   transition: border-color 0.25s ease-in-out;

@@ -7,8 +7,10 @@
 
 .s-wrapper {
   display: flex;
+  flex-flow: row;
+  width: 100vw;
   height: 100vh;
-  flex-flow: row nowrap;
+  overflow-y: hidden;
 }
 
 .s-wrapper video {
@@ -18,63 +20,58 @@
 }
 
 .s-wrapper .s-left-column {
-  width: 100px;
+  min-width: 50px;
+  max-width: 100px;
+  width: 20vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
 }
 
 .s-wrapper .s-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 100%;
-  padding-left: 130px;
+  height: 100vh;
+  padding-left: 24px;
   position: relative;
 }
 
 .s-wrapper .s-main-content__top {
-  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  overflow-y: scroll;
 }
 
 .s-wrapper .s-main-content__bottom {
-  height: 20vh;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .s-wrapper .s-main-content .s-logo img {
-  margin-top: 50px;
-  margin-left: 0;
-  margin-bottom: 30px;
+  max-width: 95%;
+  margin-top: 36px;
 }
 
 .s-wrapper .s-main-content__top .s-description {
   background-color: rgba(0, 0, 0, 0.7);
-  max-width: 50%;
+  max-width: 600px;
+  margin-right: 16px;
   padding: 20px;
   border-radius: 10px;
 }
 
 .s-wrapper .s-main-content__top .s-description .s-description__text {
-  color: white;
   line-height: 170%;
 }
 
 .s-wrapper .s-main-content__top .s-description .pills {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .s-wrapper .s-main-content .s-links {
-  padding: 20px;
-  padding-left: 0;
+  padding: 16px;
 }
 
 .s-wrapper .s-main-content .s-links ul {
@@ -82,17 +79,8 @@
   flex-direction: row;
 }
 
-.s-spiderman-01-01 {
-  background-image: url("../../assets/images/spiderman-tobey/movie-01/background.png");
-  background-size: cover;
-}
-
-.s-spiderman-01-02 {
-  background-image: url("../../assets/images/spiderman-tobey/movie-02/background.png");
-  background-size: cover;
-}
-
-.s-spiderman-01-03 {
-  background-image: url("../../assets/images/spiderman-tobey/movie-03/background.png");
-  background-size: cover;
+@media screen and (max-width: 600px) {
+  .s-wrapper .s-main-content {
+    padding-left: 0px;
+  }
 }

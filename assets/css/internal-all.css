@@ -1,6 +1,6 @@
 @import url("../../assets/css/reset.css");
 @import url("../../assets/css/global.css");
-@import url("../../assets/css/components/navigator-all.css");
+@import url("../../assets/css/components/navigator.css");
 @import url("../../assets/css/components/pills.css");
 @import url("../../assets/css/components/link-button.css");
 @import url("../../assets/css/components/gallery.css");
@@ -36,21 +36,23 @@
 }
 
 .s-page-wrapper .s-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 100%;
-  padding-left: 30px;
+  height: 100vh;
+  padding-left: 24px;
   position: relative;
 }
 
 .s-page-wrapper .s-main-content__top {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  overflow-y: scroll;
 }
 
 .s-page-wrapper .s-main-content__bottom {
   display: flex;
-  height: 20vh;
 }
 
 .s-page-wrapper .s-main-content__top .s-logo img {
@@ -64,7 +66,6 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
 }
 
 .s-page-wrapper .s-main-content__top .s-description {
@@ -175,5 +176,15 @@
     position: absolute;
     transform: translateY(0vh);
     z-index: 5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .s-page-wrapper .s-main-content {
+    padding-left: 0;
+  }
+
+  .s-page-wrapper .s-main-content__top .s-middle-content {
+    justify-content: flex-start;
   }
 }

@@ -18,4 +18,4 @@ https://fancyapps.com/
 
 #### próximos passos:
 
-- responsividade páginas internas
+- videos nas galerias

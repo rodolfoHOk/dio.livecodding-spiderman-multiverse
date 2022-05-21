@@ -15,7 +15,3 @@ Github pages: https://rodolfohok.github.io/dio.livecoding-spiderman-multiverse/
 ## 🔗 Links Úteis ✨
 
 https://fancyapps.com/
-
-#### próximos passos:
-
-- videos nas galerias

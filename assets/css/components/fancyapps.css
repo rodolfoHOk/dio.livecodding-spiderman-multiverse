@@ -35,3 +35,9 @@ a[data-fancybox] img {
 .fancybox__caption {
   max-width: 80%;
 }
+
+@media screen and (max-width: 600px) {
+  .fancybox__container .fancybox__content {
+    width: 90vw !important;
+  }
+}

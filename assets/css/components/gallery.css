@@ -2,30 +2,21 @@
 
 .gallery {
   display: flex;
-  height: 100%;
-  padding: 20px;
+  height: calc(100% - 32px);
+  padding: 16px;
   padding-left: 0;
 }
 
 .gallery ul {
   display: flex;
-  flex-direction: row;
-}
-
-.gallery ul li {
-  display: flex;
-  margin-left: 25px;
-}
-
-.gallery ul li:first-child {
-  margin-left: 0px;
+  gap: 16px;
 }
 
 .gallery ul li a img {
   max-width: 100%;
-  max-height: 100%;
-  border: solid 6px white;
-  border-radius: 15px;
+  max-height: calc(100% - 8px);
+  border: solid 4px white;
+  border-radius: 16px;
   transition: border-color 0.25s ease-in-out;
 }
 

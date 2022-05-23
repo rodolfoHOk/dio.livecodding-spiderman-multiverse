@@ -13,7 +13,8 @@
 
 .gallery ul li a img {
   max-width: 100%;
-  max-height: calc(150px);
+  width: 100%;
+  max-height: 150px;
   border: solid 4px white;
   border-radius: 16px;
   transition: border-color 0.25s ease-in-out;
@@ -21,4 +22,11 @@
 
 .gallery ul li a img:hover {
   border-color: var(--primary-color);
+}
+
+@media screen and (max-height: 540px) {
+  .gallery ul li a img {
+    width: auto;
+    max-height: 75px;
+  }
 }

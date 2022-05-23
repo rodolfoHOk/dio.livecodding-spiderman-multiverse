@@ -319,7 +319,7 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 600px) {
   .s-menu {
     padding-top: 0.125rem;
   }
